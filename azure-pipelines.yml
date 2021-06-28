@@ -73,7 +73,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'ubuntu-20.04'
-    environment: dev
+    environment: 'dev'
     variables:
     - group: Release
     strategy:
@@ -96,7 +96,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'ubuntu-20.04'
-    environment: test
+    environment: 'test'
     variables:
     - group: 'Release'
     strategy:
@@ -144,7 +144,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'ubuntu-20.04'
-    environment: staging
+    environment: 'staging'
     variables:
     - group: 'Release'
     strategy:
